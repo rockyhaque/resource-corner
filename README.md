@@ -46,14 +46,129 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Cheat Sheets
 - Productivity Tools
 
-## Contribution Guidelines
+  - [Notes1](#notes1)
 
-We welcome contributions! If you have valuable resources, notes, or code to share, please follow these guidelines:
+# Notes1
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Add your contributions.
-4. Submit a pull request with a description of your additions.
+# How to Setup Google Sign Up Using Firebase
+
+## 1. Create Project
+- Create a new Firebase project in the Firebase Console.
+
+## 2. Register App with Web
+- Register your app with Firebase.
+
+## 3. Add Firebase SDK
+- Run the following command to install Firebase SDK:
+  ```bash
+  npm install firebase
+  ```
+## 4. Add Firebase Config File
+- Create a config file and add it to your project. Export the app from this file:
+
+> Path: root-folder/src/firebase/firebase.init.js
+
+
+`
+firebase.init.js
+`
+
+```
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  // your firebase config here
+};
+
+const app = initializeApp(firebaseConfig);
+
+export default app;
+
+```
+
+- Important: Do not publish or publicize your Firebase config by pushing it to GitHub.
+
+## 5. Set Up Firebase Authentication in Docs
+- Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
+
+## 6. Create Login Page Component
+- Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
+
+- Create a Login Page component:
+
+> Path: root-folder/src/pages/LoginPage.js
+
+`
+LoginPage.jsx
+`
+
+```
+import { getAuth } from "firebase/auth";
+
+import app from "../firebase/firebase.init";
+
+const Login = () => {
+  const auth = getAuth(app);
+  return (
+    <>
+    </>
+  );
+};
+
+export default Login;
+
+```
+
+## 7. Create Login Page Component
+- Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
+
+- Update the Login Page component to include Google authentication setup:
+
+```
+import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.init";
+
+const Login = () => {
+  const auth = getAuth(app);
+  const provider = new GoogleAuthProvider();
+
+  // Step: Create handleGoogleSignIn function
+  const handleGoogleSignIn = () => {
+    signInWithPopup(auth, provider)
+      .then(result => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch(error => {
+        console.log('Error', error.message);
+      });
+  };
+
+  return (
+    <>
+      {/* Step: Add onClick handler to Google Sign-In button */}
+
+      <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+    </>
+  );
+};
+
+export default Login;
+
+```
+
+## 8. Enable Google Sign-In Provider
+- Go to Firebase Console > Build > Authentication > Sign-in method
+- Enable Google (and any other providers like Facebook, GitHub, etc...)
+
+### Troubleshooting
+
+If you encounter the error: Firebase: Error (auth/configuration-not-found), try restarting your server.
+
+
+
+
+
 
 ## Contact
 
