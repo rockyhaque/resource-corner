@@ -32,21 +32,15 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Useful Websites
 
 ### Notes
-- Lecture Notes
-- Study Guides
-- Summaries of Key Concepts
+- [How to Setup Google Sign Up Using Firebase](#notes1)
 
 ### Code
 - Programming Snippets
-- Sample Projects
-- Scripts and Automation Tools
 
 ### Miscellaneous
 - Diagrams and Infographics
-- Cheat Sheets
-- Productivity Tools
 
-  - [Notes1](#notes1)
+- [Notes1](#notes1)
 
 # Notes1
 
