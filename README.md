@@ -32,7 +32,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Useful Websites
 
 ### Notes
-- [How to Setup Google Sign Up Using Firebase](#Notes->1)
+- [How to Setup Google Sign Up Using Firebase](#Notes1)
 
 ### Code
 - Programming Snippets
@@ -42,7 +42,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 
 
 
-# Notes->1
+# Notes1
 
 ## How to Setup Google Sign Up Using Firebase
 
