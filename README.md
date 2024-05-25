@@ -40,9 +40,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 ### Miscellaneous
 - Diagrams and Infographics
 
-- [Notes1](#notes1)
 
-# Notes1
 
 # How to Setup Google Sign Up Using Firebase
 
