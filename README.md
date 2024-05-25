@@ -160,27 +160,27 @@ export default Login;
 If you encounter the error: Firebase: Error (auth/configuration-not-found), try restarting your server.
 
 
-#Notes2
+# Notes2
 
 # How to Setup Firebase Sign Up Using GitHub
 
-## 1. Enable GitHub Provider in Firebase
+### 1. Enable GitHub Provider in Firebase
 - Go to Firebase Console > Build > Authentication > Sign-in method
 - Enable the GitHub provider.
 
-## 2. Configure GitHub Provider
+### 2. Configure GitHub Provider
 - Add the Client ID and Client Secret from the GitHub developer console to the provider configuration in Firebase.
 
-## 3. Create a GitHub App
+### 3. Create a GitHub App
 - Go to your GitHub profile > Settings > Developer settings > New GitHub App
 - Set the Callback URL to the one provided in the Firebase Console when enabling the GitHub sign-in provider.
 - Complete the requirements to create the GitHub app. You will get the `Client ID`.
 - To get the `Client Secret`, click on `Generate New Client Secret`.
 
-## 4. Set Up Firebase Authentication in Docs
+### 4. Set Up Firebase Authentication in Docs
 - Go to Firebase Console > Docs > Build > Authentication > Web > GitHub
 
-## 5. Update Login Page Component for GitHub Authentication
+### 5. Update Login Page Component for GitHub Authentication
 - Add GitHub authentication to the Login Page component:
 
 ```
@@ -247,7 +247,7 @@ If you encounter the error: Firebase: Error (auth/configuration-not-found), try 
 ```
 
 
-## Contact
+### Contact
 
 For any inquiries or suggestions, connect with me on [LinkedIn](https://www.linkedin.com/in/rockyhaque).
 
