@@ -30,7 +30,9 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Technology Blogs
 
 ### Notes
-- [How to Setup Google Sign Up Using Firebase](#Notes1)
+- [How to Setup Google Sign In Using Firebase](#Notes1)
+- [How to Setup Github Sign In Using Firebase](#Notes2)
+  
 
 ### Code
 - Programming Snippets
@@ -158,8 +160,91 @@ export default Login;
 If you encounter the error: Firebase: Error (auth/configuration-not-found), try restarting your server.
 
 
+#Notes2
 
+# How to Setup Firebase Sign Up Using GitHub
 
+## 1. Enable GitHub Provider in Firebase
+- Go to Firebase Console > Build > Authentication > Sign-in method
+- Enable the GitHub provider.
+
+## 2. Configure GitHub Provider
+- Add the Client ID and Client Secret from the GitHub developer console to the provider configuration in Firebase.
+
+## 3. Create a GitHub App
+- Go to your GitHub profile > Settings > Developer settings > New GitHub App
+- Set the Callback URL to the one provided in the Firebase Console when enabling the GitHub sign-in provider.
+- Complete the requirements to create the GitHub app. You will get the `Client ID`.
+- To get the `Client Secret`, click on `Generate New Client Secret`.
+
+## 4. Set Up Firebase Authentication in Docs
+- Go to Firebase Console > Docs > Build > Authentication > Web > GitHub
+
+## 5. Update Login Page Component for GitHub Authentication
+- Add GitHub authentication to the Login Page component:
+
+```
+  import { GithubAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+  import app from "../firebase/firebase.init";
+  import { useState } from "react";
+
+  const Login = () => {
+    const [user, setUser] = useState(null);
+    const auth = getAuth(app);
+    const githubProvider = new GithubAuthProvider();
+
+    // GitHub Sign-In function
+    const handleGithubSignIn = () => {
+      signInWithPopup(auth, githubProvider)
+        .then(result => {
+          const loggedInUser = result.user;
+          console.log(loggedInUser); 
+          // Log the user object to see all properties
+          setUser(loggedInUser);
+        })
+        .catch(error => {
+          console.log('Error', error.message);
+        });
+    };
+
+    return (
+      <div>
+        <div className="text-center mt-24">
+          <h2 className="text-4xl tracking-tight mb-10">
+            Sign in into your account
+          </h2>
+        </div>
+        <div className="flex flex-col justify-center my-2 mx-4 md:mx-0">
+          <div className="w-full md:w-full px-3 mb-6">
+            <button
+              onClick={handleGithubSignIn}
+              className="appearance-none block w-full bg-purple-700 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-blue-500 focus:outline-none focus:bg-white focus:border-gray-500"
+            >
+              Sign in with GitHub
+            </button>
+          </div>
+
+          <div>
+            {user && (
+              <div>
+                <h3>User: {user.displayName}</h3>
+                <h4>Email: {user.email}</h4>
+                {user.photoURL ? (
+                  <img src={user.photoURL} alt="User profile" />
+                ) : (
+                  <p>No photo available</p>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  export default Login;
+
+```
 
 
 ## Contact
