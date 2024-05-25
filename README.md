@@ -42,9 +42,9 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 
 
 
-# Notes1
+# Notes 1
 
-# How to Setup Google Sign Up Using Firebase
+## How to Setup Google Sign Up Using Firebase
 
 ## 1. Create Project
 - Create a new Firebase project in the Firebase Console.
