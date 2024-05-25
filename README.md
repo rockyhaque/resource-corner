@@ -46,18 +46,18 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 
 ## How to Setup Google Sign Up Using Firebase
 
-## 1. Create Project
+### 1. Create Project
 - Create a new Firebase project in the Firebase Console.
 
-## 2. Register App with Web
+### 2. Register App with Web
 - Register your app with Firebase.
 
-## 3. Add Firebase SDK
+### 3. Add Firebase SDK
 - Run the following command to install Firebase SDK:
   ```bash
   npm install firebase
   ```
-## 4. Add Firebase Config File
+### 4. Add Firebase Config File
 - Create a config file and add it to your project. Export the app from this file:
 
 > Path: root-folder/src/firebase/firebase.init.js
@@ -82,10 +82,10 @@ export default app;
 
 - Important: Do not publish or publicize your Firebase config by pushing it to GitHub.
 
-## 5. Set Up Firebase Authentication in Docs
+### 5. Set Up Firebase Authentication in Docs
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
-## 6. Create Login Page Component
+### 6. Create Login Page Component
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
 - Create a Login Page component:
@@ -113,7 +113,7 @@ export default Login;
 
 ```
 
-## 7. Create Login Page Component
+### 7. Create Login Page Component
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
 - Update the Login Page component to include Google authentication setup:
@@ -151,7 +151,7 @@ export default Login;
 
 ```
 
-## 8. Enable Google Sign-In Provider
+### 8. Enable Google Sign-In Provider
 - Go to Firebase Console > Build > Authentication > Sign-in method
 - Enable Google (and any other providers like Facebook, GitHub, etc...)
 
