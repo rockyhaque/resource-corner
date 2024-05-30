@@ -33,7 +33,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - [How to Setup Google Sign In Using Firebase](#Notes1)
 - [How to Setup Github Sign In Using Firebase](#Notes2)
 - [🌼Firebase Deploye](#Notes3)
-- [🌼❗Firebase Hosting Setup Complete Issue 😥](#Notes4)
+- [Firebase Hosting Setup Complete Issue 😥](#Notes4)
 - [🌼Deploy to Netlify](#Notes5)
   
 
@@ -99,7 +99,7 @@ export default app;
 LoginPage.jsx
 `
 
-```
+```react
 import { getAuth } from "firebase/auth";
 
 import app from "../firebase/firebase.init";
