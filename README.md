@@ -121,7 +121,7 @@ export default Login;
 
 - Update the Login Page component to include Google authentication setup:
 
-```
+```javascript 
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../firebase/firebase.init";
 
@@ -187,7 +187,7 @@ If you encounter the error: Firebase: Error (auth/configuration-not-found), try 
 ### 5. Update Login Page Component for GitHub Authentication
 - Add GitHub authentication to the Login Page component:
 
-```
+```javascript 
   import { GithubAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
   import app from "../firebase/firebase.init";
   import { useState } from "react";
