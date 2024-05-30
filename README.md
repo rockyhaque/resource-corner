@@ -32,6 +32,9 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 ### Notes
 - [How to Setup Google Sign In Using Firebase](#Notes1)
 - [How to Setup Github Sign In Using Firebase](#Notes2)
+- [🌼Firebase Deploye](#Notes3)
+- [🌼❗Firebase Hosting Setup Complete Issue 😥](#Notes4)
+- [🌼Deploy to Netlify](#Notes5)
   
 
 ### Code
@@ -159,6 +162,7 @@ export default Login;
 
 If you encounter the error: Firebase: Error (auth/configuration-not-found), try restarting your server.
 
+<br><br>
 
 # Notes2
 
@@ -245,7 +249,169 @@ If you encounter the error: Firebase: Error (auth/configuration-not-found), try 
   export default Login;
 
 ```
+<br><br>
 
+# Notes3
+
+## 🌼Firebase Deploy
+
+```
+npm run build
+```
+
+```
+firebase init
+```
+
+
+> Are you ready to proceed -> `y`
+
+> Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys
+
+> Use an existing project
+
+> What do you want to use as your public directory? -> `dist`
+
+> Configure as a single-page app (rewrite all urls to /index.html)? -> `y`
+
+> Set up automatic builds and deploys with GitHub? `n`
+
+```
+firebase deploy
+```
+
+<br><br>
+
+# Notes4
+
+## ❗Firebase Hosting Setup Complete Issue 😥
+
+You might have accidentally typed y and pressed enter for:
+
+> What do you want to use as your public directory? `y`
+
+If the live link page shows like this:
+
+❗Welcome Firebase Hosting Setup Complete You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!
+
+**Solution**
+
+**Step 1:** Replace index.html
+
+
+Replace the contents of index.html in your root folder with:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My-react-app</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+```
+
+**Step 2:** Delete Specific Folders and Files Delete the `dist` folder, `.firebase`, `.firebaserc`, and `firebase.json`.
+
+
+**Step 3:** Run Commands in Terminal
+
+Open PowerShell (or Git Bash if PowerShell gives errors) and run:
+
+
+```
+npm install firebase
+
+```
+***skip if already installed***
+```
+npm install -g firebase-tools
+```
+
+```
+firebase login
+```
+```
+firebase init
+```
+
+Follow these prompts:
+
+> Are you ready to proceed?: `y`
+
+> Select Hosting: `Hosting: Configure files for Firebase Hosting`
+
+> Use an existing project: **Select your project**
+
+> Public directory: Type `dist`
+
+> Single-page app: `y`
+
+> Automatic builds and deploys with GitHub: `n`
+
+> Overwrite dist/index.html: `y` (if prompted)
+
+```
+npm run build
+```
+
+```
+firebase deploy
+```
+
+**Step 4:** Verify Deployment
+
+After deployment, open Chrome, check your live link, open the console tab, right-click the refresh button, and select "Empty Cache and Hard Reload" 3-4 times.
+
+<br><br>
+
+# Notes5
+
+## 🌼Deploy to Netlify
+
+**Step 1:** Create `_redirects` File
+
+In your public folder, create a file named _redirects with the following content:
+
+```
+/* /index.html 200
+```
+
+**Step 2:** Build the Project
+
+```
+npm run build
+```
+
+**Step 3:** Deploy to Netlify
+
+>Sign in to Netlify.
+
+> Go to "Sites" and scroll down.
+
+> Drag and drop your dist folder to deploy.
+
+
+**Step 4:** Configure Firebase Authentication (If Applicable)
+
+If you use Firebase Authentication, ensure it works with your Netlify deployment:
+
+> Go to the Firebase Console.
+
+> Click on the "Authentication" menu, then the "Settings" tab.
+
+> Scroll down to "Authorized domains".
+
+> Click "Add domain" and enter your Netlify URL.
+
+
+<br><br>
 
 ### Contact
 
