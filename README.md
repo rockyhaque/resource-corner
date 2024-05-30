@@ -70,7 +70,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 firebase.init.js
 `
 
-```react
+```javascript 
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -99,7 +99,7 @@ export default app;
 LoginPage.jsx
 `
 
-```
+```javascript 
 import { getAuth } from "firebase/auth";
 
 import app from "../firebase/firebase.init";
