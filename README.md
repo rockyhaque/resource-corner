@@ -498,6 +498,7 @@ Create a `vercel.json` file in your project directory with the following content
     ]
 }
 
+```
 
 <br> <br>
 
