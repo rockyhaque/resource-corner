@@ -35,6 +35,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - [🌼Firebase Deploye](#Notes3)
 - [Firebase Hosting Setup Complete Issue 😥](#Notes4)
 - [🌼Deploy to Netlify](#Notes5)
+- [🌼Deploy with Vercel for server side](#Notes6)
   
 
 ### Code
@@ -412,6 +413,93 @@ If you use Firebase Authentication, ensure it works with your Netlify deployment
 
 
 <br><br>
+
+# Notes6
+
+## 🌼Deploy with Vercel for server side
+
+# Deploying Plant Palace Server to Vercel
+
+## Setting Up Environment Variables
+1. Navigate to **Settings > Environment Variables** in your Vercel dashboard.
+2. Click **Add** to create a new environment variable.
+
+## Deployment Steps
+1. Open your terminal and navigate to your project directory.
+2. Run the following command to start the deployment process:
+
+    ```sh
+    vercel
+    ```
+
+3. Follow the prompts:
+    - Set up and deploy: `yes`
+    - Scope: `rockyhaque's projects`
+    - Link to existing project: `no`
+    - Project name: `plant-palace-server`
+    - Directory location: `./`
+
+4. Once the project is linked, inspect the deployment at the provided URL.
+
+    ```sh
+    Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/65vgHSVVdRWy6jvj1mCUGx34TxSt
+    ```
+
+5. Your project is now live at:
+
+    ```sh
+    Production: https://plant-palace-server-hx5v1zdvi-rockyhaques-projects.vercel.app
+    ```
+
+6. To overwrite the deployment later, use the following command:
+
+    ```sh
+    vercel --prod
+    ```
+
+## Production Deployment
+1. To deploy to production, run:
+
+    ```sh
+    vercel --prod
+    ```
+
+2. Inspect the production deployment at:
+
+    ```sh
+    Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/6veHFZGJ57C64zqi21FuBTRdDEy4
+    ```
+
+3. Your production project is now live at:
+
+    ```sh
+    Production: https://plant-palace-server-2s047nub9-rockyhaques-projects.vercel.app
+    ```
+
+## Vercel Configuration
+
+Create a `vercel.json` file in your project directory with the following content:
+
+```json
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "./index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/",
+            "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+        }
+    ]
+}
+
+
+<br> <br>
 
 ### Contact
 
