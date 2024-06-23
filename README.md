@@ -42,7 +42,9 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Programming Snippets
 
 ### Profile
-`https://i.ibb.co/9gdS9vP/usman-yousaf-y-IOVi-GQmj-J4-unsplash.jpg`
+`
+https://i.ibb.co/9gdS9vP/usman-yousaf-y-IOVi-GQmj-J4-unsplash.jpg
+`
 `https://i.ibb.co/QcjbGs5/tofan-teodor-Kjht-Jp7-Rh3-E-unsplash.jpg`
 `https://i.ibb.co/Zx8HTV2/harry-pappas-xyaui-SBWRFs-unsplash.jpg`
 `https://i.ibb.co/tMK85PF/rodney-gainous-jr-p-VF71muh-Rs-unsplash.jpg`
