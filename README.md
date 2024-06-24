@@ -15,7 +15,7 @@ A comprehensive collection of links, notes, code snippets, and various other res
 
 ## Introduction
 
-Welcome to **resource-corner**! This repository, curated by [Rocky Haque](https://www.linkedin.com/in/rockyhaque), serves as a comprehensive collection of diverse resources, including:
+Welcome to **resource-corner**! This repository, created by [Rocky Haque](https://www.linkedin.com/in/rockyhaque), serves as a comprehensive collection of diverse resources, including:
 
 - **Links**: Curated links to valuable articles, tutorials, and external resources.
 - **Notes**: Detailed notes on various topics to help with study and review.
