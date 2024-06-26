@@ -582,7 +582,7 @@ document.querySelector("html").setAttribute("data-theme", localTheme);
 
 Include the DaisyUI theme controller component in your Navbar. Refer to the
 
-DaisyUI Theme Controller Components for more details.
+[DaisyUI Theme Controller Components for more details.](https://daisyui.com/components/theme-controller)
 
 Example component:
 
