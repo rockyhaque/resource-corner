@@ -200,7 +200,9 @@ export default Login;
 
 If you encounter the error: Firebase: Error (auth/configuration-not-found), try restarting your server.
 
-<br><br>
+<br> <br>
+
+<hr>
 
 # Notes2
 
@@ -287,7 +289,9 @@ If you encounter the error: Firebase: Error (auth/configuration-not-found), try 
   export default Login;
 
 ```
-<br><br>
+<br> <br>
+
+<hr>
 
 # Notes3
 
@@ -365,8 +369,12 @@ Open PowerShell (or Git Bash if PowerShell gives errors) and run:
 
 ```
 npm install firebase
+```
 
 ```
+firebase init
+```
+
 ***skip if already installed***
 ```
 npm install -g firebase-tools
@@ -375,9 +383,7 @@ npm install -g firebase-tools
 ```
 firebase login
 ```
-```
-firebase init
-```
+
 
 Follow these prompts:
 
@@ -407,7 +413,9 @@ firebase deploy
 
 After deployment, open Chrome, check your live link, open the console tab, right-click the refresh button, and select "Empty Cache and Hard Reload" 3-4 times.
 
-<br><br>
+<br> <br>
+
+<hr>
 
 # Notes5
 
@@ -449,7 +457,9 @@ If you use Firebase Authentication, ensure it works with your Netlify deployment
 > Click "Add domain" and enter your Netlify URL.
 
 
-<br><br>
+<br> <br>
+
+<hr>
 
 # Notes6
 
@@ -678,6 +688,8 @@ npm install express cors dotenv
 - Create index.js file inside the server folder
 - Add  "start": "node index.js", inside the  scripts in package.json file
 
+<br>
+
 ### 🔰Step - 3:
 
 ```javascript 
@@ -704,7 +716,9 @@ app.listen(port, () => {
 
 ```
 
+<br> <br>
 
+<hr>
 
 ### Contact
 
