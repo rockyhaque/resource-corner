@@ -34,13 +34,14 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Technology Blogs
 
 ### Notes
-- [How to Setup Google Sign In Using Firebase](#Notes1)
-- [How to Setup Github Sign In Using Firebase](#Notes2)
-- [🌼Firebase Deploye](#Notes3)
-- [Firebase Hosting Setup Complete Issue 😥](#Notes4)
-- [🌼Deploy to Netlify](#Notes5)
-- [🌼Deploy with Vercel for server side](#Notes6)
-- [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
+- 01. [How to Setup Google Sign In Using Firebase](#Notes1)
+- 02. [How to Setup Github Sign In Using Firebase](#Notes2)
+- 03. [Firebase Deploye 🌼](#Notes3)
+- 04. [Firebase Hosting Setup Complete Issue 😥](#Notes4)
+- 05. [Deploy to Netlify 🌼](#Notes5)
+- 06. [Deploy with Vercel for server-side 🌼](#Notes6)
+- 07. [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
+- 08. [Basic Server setup with node & express js 🖥️ ](#Note8)
   
 
 ### Code
@@ -647,6 +648,63 @@ const handleThemeToggle = (e) => {
 ```
 
 Now enjoy your theme switcher
+
+<br> <br>
+
+<hr>
+
+# Notes8
+
+# Basic Server setup with node & express js 🖥️ 
+
+## 🔰Step - 1:
+
+```
+mkdir <Folder Name>
+```
+```
+cd <Folder Name>
+```
+```
+npm init -y
+```
+```
+npm install express cors dotenv
+```
+
+<br>
+  
+## 🔰Step - 2:
+- Create index.js file inside the server folder
+- Add  "start": "node index.js", inside the  scripts in package.json file
+
+## 🔰Step - 3:
+
+```javascript 
+
+const express = require("express");
+const app = express();
+const cors = require("cors");
+
+// config
+require("dotenv").config();
+const port = process.env.PORT || 5000;
+
+// middleware
+app.use(express.json());
+app.use(cors());
+
+app.get("/", (req, res) => {
+  res.send("Server is running...");
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+```
+
+
 
 ### Contact
 
