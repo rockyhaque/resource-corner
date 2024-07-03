@@ -41,7 +41,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 05. [Deploy to Netlify 🌼](#Notes5)
 06. [Deploy with Vercel for server-side 🌼](#Notes6)
 07. [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
-08. [Basic Server setup with node & express js 🖥️ ](#Note8)
+08. [Basic Server setup with node & express js 🖥️ ](#Notes8)
   
 
 ### Code
