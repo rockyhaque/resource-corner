@@ -34,14 +34,14 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 - Technology Blogs
 
 ### Notes
-- 01. [How to Setup Google Sign In Using Firebase](#Notes1)
-- 02. [How to Setup Github Sign In Using Firebase](#Notes2)
-- 03. [Firebase Deploye 🌼](#Notes3)
-- 04. [Firebase Hosting Setup Complete Issue 😥](#Notes4)
-- 05. [Deploy to Netlify 🌼](#Notes5)
-- 06. [Deploy with Vercel for server-side 🌼](#Notes6)
-- 07. [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
-- 08. [Basic Server setup with node & express js 🖥️ ](#Note8)
+01. [How to Setup Google Sign In Using Firebase](#Notes1)
+02. [How to Setup Github Sign In Using Firebase](#Notes2)
+03. [Firebase Deploye 🌼](#Notes3)
+04. [Firebase Hosting Setup Complete Issue 😥](#Notes4)
+05. [Deploy to Netlify 🌼](#Notes5)
+06. [Deploy with Vercel for server-side 🌼](#Notes6)
+07. [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
+08. [Basic Server setup with node & express js 🖥️ ](#Note8)
   
 
 ### Code
