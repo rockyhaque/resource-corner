@@ -657,7 +657,7 @@ Now enjoy your theme switcher
 
 # Basic Server setup with node & express js 🖥️ 
 
-## 🔰Step - 1:
+### 🔰Step - 1:
 
 ```
 mkdir <Folder Name>
@@ -674,11 +674,11 @@ npm install express cors dotenv
 
 <br>
   
-## 🔰Step - 2:
+### 🔰Step - 2:
 - Create index.js file inside the server folder
 - Add  "start": "node index.js", inside the  scripts in package.json file
 
-## 🔰Step - 3:
+### 🔰Step - 3:
 
 ```javascript 
 
