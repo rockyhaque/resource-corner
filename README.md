@@ -45,7 +45,7 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
   
 
 ### Code
-- Programming Snippets
+01. [Shared Section Title with description](#Code-1)
 
 ### Profile
 
@@ -78,6 +78,24 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 27. [https://i.ibb.co/ZzprBnH/darshan-patel-QJEVpydul-Gs-unsplash.jpg](https://i.ibb.co/ZzprBnH/darshan-patel-QJEVpydul-Gs-unsplash.jpg)
 28. [https://i.ibb.co/C7Zxy2N/alexander-hipp-i-EEBWg-Y-6l-A-unsplash.jpg](https://i.ibb.co/C7Zxy2N/alexander-hipp-i-EEBWg-Y-6l-A-unsplash.jpg)
 
+<br><br>
+
+# Code-1
+
+## Shared Section Title with description
+
+```
+const SectionTitle = ({heading, description}) => {
+    return (
+        <div className="mx-auto text-center md:w-4/12 my-8">
+            <h3 className="text-3xl font-semibold py-4">{heading}</h3>
+            <p>{description}</p>
+        </div>
+    );
+};
+
+export default SectionTitle;
+```
 
 
 
