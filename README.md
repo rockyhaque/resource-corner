@@ -333,7 +333,7 @@ firebase init
 
 > What do you want to use as your public directory? -> `dist`
 
-> Configure as a single-page app (rewrite all urls to /index.html)? -> `y`
+> Configure as a single-page app (rewrite all urls to /index.html)? -> `n`
 
 > Set up automatic builds and deploys with GitHub? `n`
 
