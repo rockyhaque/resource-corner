@@ -28,7 +28,9 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 ## Repository Overview
 
 ### Tools
-[https://freefrontend.com/tailwind-code-examples/](https://freefrontend.com/tailwind-code-examples/)
+01. [https://freefrontend.com/tailwind-code-examples/](https://freefrontend.com/tailwind-code-examples/)
+02. [https://pagedone.io/](https://pagedone.io)
+
 
 ### Links
 - Technology Blogs
