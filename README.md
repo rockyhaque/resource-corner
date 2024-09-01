@@ -1,12 +1,12 @@
-
 # Resource-Corner
 
 A comprehensive collection of links, notes, code snippets, and various other resources to support learning and development.
 
 ## Table of Contents
+
 - [Introduction](#introduction)
 - [Repository Overview](#repository-overview)
-  - [Tools](#tools) 
+  - [Tools](#tools)
   - [Links](#links)
   - [Notes](#notes)
   - [Code](#code)
@@ -28,29 +28,31 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 ## Repository Overview
 
 ### Tools
-01. [https://freefrontend.com/tailwind-code-examples/](https://freefrontend.com/tailwind-code-examples/)
-02. [https://pagedone.io/](https://pagedone.io)
-03. [https://headlessui.com](https://headlessui.com)
 
+1.  [https://freefrontend.com/tailwind-code-examples/](https://freefrontend.com/tailwind-code-examples/)
+2.  [https://pagedone.io/](https://pagedone.io)
+3.  [https://headlessui.com](https://headlessui.com)
 
 ### Links
+
 - Technology Blogs
 
 ### Notes
-01. [How to Setup Google Sign In Using Firebase](#Notes1)
-02. [How to Setup Github Sign In Using Firebase](#Notes2)
-03. [Firebase Deploye 🌼](#Notes3)
-04. [Firebase Hosting Setup Complete Issue 😥](#Notes4)
-05. [Deploy to Netlify 🌼](#Notes5)
-06. [Deploy with Vercel for server-side 🌼](#Notes6)
-07. [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
-08. [Basic Server setup with node & express js 🖥️ ](#Notes8)
-09. [Complete Server setup with JWT, MongoDB, Node & Express js ](#Notes9)
-   
-  
+
+1.  [How to Setup Google Sign In Using Firebase](#Notes1)
+2.  [How to Setup Github Sign In Using Firebase](#Notes2)
+3.  [Firebase Deploye 🌼](#Notes3)
+4.  [Firebase Hosting Setup Complete Issue 😥](#Notes4)
+5.  [Deploy to Netlify 🌼](#Notes5)
+6.  [Deploy with Vercel for server-side 🌼](#Notes6)
+7.  [Theme Switcher Documentation with DaisyUI 🌩️ ](#Notes7)
+8.  [Basic Server setup with node & express js 🖥️ ](#Notes8)
+9.  [Complete Server setup with JWT, MongoDB, Node & Express js ](#Notes9)
+10. [Basic Contibution at Github](#Note10)
 
 ### Code
-01. [Shared Section Title with description](#Code-1)
+
+1.  [Shared Section Title with description](#Code-1)
 
 ### Profile
 
@@ -102,7 +104,6 @@ const SectionTitle = ({heading, description}) => {
 export default SectionTitle;
 ```
 
-
 <br>
 
 # Notes1
@@ -110,27 +111,29 @@ export default SectionTitle;
 ## How to Setup Google Sign Up Using Firebase
 
 ### 1. Create Project
+
 - Create a new Firebase project in the Firebase Console.
 
 ### 2. Register App with Web
+
 - Register your app with Firebase.
 
 ### 3. Add Firebase SDK
+
 - Run the following command to install Firebase SDK:
   ```bash
   npm install firebase
   ```
+
 ### 4. Add Firebase Config File
+
 - Create a config file and add it to your project. Export the app from this file:
 
 > Path: root-folder/src/firebase/firebase.init.js
 
+`firebase.init.js`
 
-`
-firebase.init.js
-`
-
-```javascript 
+```javascript
 import { initializeApp } from "firebase/app";
 
 const firebaseConfig = {
@@ -140,48 +143,44 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 export default app;
-
 ```
 
 - Important: Do not publish or publicize your Firebase config by pushing it to GitHub.
 
 ### 5. Set Up Firebase Authentication in Docs
+
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
 ### 6. Create Login Page Component
+
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
 - Create a Login Page component:
 
 > Path: root-folder/src/pages/LoginPage.js
 
-`
-LoginPage.jsx
-`
+`LoginPage.jsx`
 
-```javascript 
+```javascript
 import { getAuth } from "firebase/auth";
 
 import app from "../firebase/firebase.init";
 
 const Login = () => {
   const auth = getAuth(app);
-  return (
-    <>
-    </>
-  );
+  return <></>;
 };
 
 export default Login;
-
 ```
 
 ### 7. Create Login Page Component
+
 - Go to Firebase Console > Docs > Build > Authentication > Web > Get Started
 
 - Update the Login Page component to include Google authentication setup:
 
-```javascript 
+```javascript
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../firebase/firebase.init";
 
@@ -192,12 +191,12 @@ const Login = () => {
   // Step: Create handleGoogleSignIn function
   const handleGoogleSignIn = () => {
     signInWithPopup(auth, provider)
-      .then(result => {
+      .then((result) => {
         const user = result.user;
         console.log(user);
       })
-      .catch(error => {
-        console.log('Error', error.message);
+      .catch((error) => {
+        console.log("Error", error.message);
       });
   };
 
@@ -211,10 +210,10 @@ const Login = () => {
 };
 
 export default Login;
-
 ```
 
 ### 8. Enable Google Sign-In Provider
+
 - Go to Firebase Console > Build > Authentication > Sign-in method
 - Enable Google (and any other providers like Facebook, GitHub, etc...)
 
@@ -231,86 +230,91 @@ If you encounter the error: Firebase: Error (auth/configuration-not-found), try 
 # How to Setup Firebase Sign Up Using GitHub
 
 ### 1. Enable GitHub Provider in Firebase
+
 - Go to Firebase Console > Build > Authentication > Sign-in method
 - Enable the GitHub provider.
 
 ### 2. Configure GitHub Provider
+
 - Add the Client ID and Client Secret from the GitHub developer console to the provider configuration in Firebase.
 
 ### 3. Create a GitHub App
+
 - Go to your GitHub profile > Settings > Developer settings > New GitHub App
 - Set the Callback URL to the one provided in the Firebase Console when enabling the GitHub sign-in provider.
 - Complete the requirements to create the GitHub app. You will get the `Client ID`.
 - To get the `Client Secret`, click on `Generate New Client Secret`.
 
 ### 4. Set Up Firebase Authentication in Docs
+
 - Go to Firebase Console > Docs > Build > Authentication > Web > GitHub
 
 ### 5. Update Login Page Component for GitHub Authentication
+
 - Add GitHub authentication to the Login Page component:
 
-```javascript 
-  import { GithubAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
-  import app from "../firebase/firebase.init";
-  import { useState } from "react";
+```javascript
+import { GithubAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import app from "../firebase/firebase.init";
+import { useState } from "react";
 
-  const Login = () => {
-    const [user, setUser] = useState(null);
-    const auth = getAuth(app);
-    const githubProvider = new GithubAuthProvider();
+const Login = () => {
+  const [user, setUser] = useState(null);
+  const auth = getAuth(app);
+  const githubProvider = new GithubAuthProvider();
 
-    // GitHub Sign-In function
-    const handleGithubSignIn = () => {
-      signInWithPopup(auth, githubProvider)
-        .then(result => {
-          const loggedInUser = result.user;
-          console.log(loggedInUser); 
-          // Log the user object to see all properties
-          setUser(loggedInUser);
-        })
-        .catch(error => {
-          console.log('Error', error.message);
-        });
-    };
-
-    return (
-      <div>
-        <div className="text-center mt-24">
-          <h2 className="text-4xl tracking-tight mb-10">
-            Sign in into your account
-          </h2>
-        </div>
-        <div className="flex flex-col justify-center my-2 mx-4 md:mx-0">
-          <div className="w-full md:w-full px-3 mb-6">
-            <button
-              onClick={handleGithubSignIn}
-              className="appearance-none block w-full bg-purple-700 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-blue-500 focus:outline-none focus:bg-white focus:border-gray-500"
-            >
-              Sign in with GitHub
-            </button>
-          </div>
-
-          <div>
-            {user && (
-              <div>
-                <h3>User: {user.displayName}</h3>
-                <h4>Email: {user.email}</h4>
-                {user.photoURL ? (
-                  <img src={user.photoURL} alt="User profile" />
-                ) : (
-                  <p>No photo available</p>
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-      </div>
-    );
+  // GitHub Sign-In function
+  const handleGithubSignIn = () => {
+    signInWithPopup(auth, githubProvider)
+      .then((result) => {
+        const loggedInUser = result.user;
+        console.log(loggedInUser);
+        // Log the user object to see all properties
+        setUser(loggedInUser);
+      })
+      .catch((error) => {
+        console.log("Error", error.message);
+      });
   };
 
-  export default Login;
+  return (
+    <div>
+      <div className="text-center mt-24">
+        <h2 className="text-4xl tracking-tight mb-10">
+          Sign in into your account
+        </h2>
+      </div>
+      <div className="flex flex-col justify-center my-2 mx-4 md:mx-0">
+        <div className="w-full md:w-full px-3 mb-6">
+          <button
+            onClick={handleGithubSignIn}
+            className="appearance-none block w-full bg-purple-700 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-blue-500 focus:outline-none focus:bg-white focus:border-gray-500"
+          >
+            Sign in with GitHub
+          </button>
+        </div>
 
+        <div>
+          {user && (
+            <div>
+              <h3>User: {user.displayName}</h3>
+              <h4>Email: {user.email}</h4>
+              {user.photoURL ? (
+                <img src={user.photoURL} alt="User profile" />
+              ) : (
+                <p>No photo available</p>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
 ```
+
 <br> <br>
 
 <hr>
@@ -326,7 +330,6 @@ npm run build
 ```
 firebase init
 ```
-
 
 > Are you ready to proceed -> `y`
 
@@ -362,7 +365,6 @@ If the live link page shows like this:
 
 **Step 1:** Replace index.html
 
-
 Replace the contents of index.html in your root folder with:
 
 ```html
@@ -383,11 +385,9 @@ Replace the contents of index.html in your root folder with:
 
 **Step 2:** Delete Specific Folders and Files Delete the `dist` folder, `.firebase`, `.firebaserc`, and `firebase.json`.
 
-
 **Step 3:** Run Commands in Terminal
 
 Open PowerShell (or Git Bash if PowerShell gives errors) and run:
-
 
 ```
 npm install firebase
@@ -397,7 +397,8 @@ npm install firebase
 firebase init
 ```
 
-***skip if already installed***
+**_skip if already installed_**
+
 ```
 npm install -g firebase-tools
 ```
@@ -405,7 +406,6 @@ npm install -g firebase-tools
 ```
 firebase login
 ```
-
 
 Follow these prompts:
 
@@ -445,7 +445,7 @@ After deployment, open Chrome, check your live link, open the console tab, right
 
 **Step 1:** Create `_redirects` File
 
-In your public folder, create a file named _redirects with the following content:
+In your public folder, create a file named \_redirects with the following content:
 
 ```
 /* /index.html 200
@@ -459,12 +459,11 @@ npm run build
 
 **Step 3:** Deploy to Netlify
 
->Sign in to Netlify.
+> Sign in to Netlify.
 
 > Go to "Sites" and scroll down.
 
 > Drag and drop your dist folder to deploy.
-
 
 **Step 4:** Configure Firebase Authentication (If Applicable)
 
@@ -478,7 +477,6 @@ If you use Firebase Authentication, ensure it works with your Netlify deployment
 
 > Click "Add domain" and enter your Netlify URL.
 
-
 <br> <br>
 
 <hr>
@@ -490,60 +488,64 @@ If you use Firebase Authentication, ensure it works with your Netlify deployment
 # Deploying Plant Palace Server to Vercel
 
 ## Setting Up Environment Variables
+
 1. Navigate to **Settings > Environment Variables** in your Vercel dashboard.
 2. Click **Add** to create a new environment variable.
 
 ## Deployment Steps
+
 1. Open your terminal and navigate to your project directory.
 2. Run the following command to start the deployment process:
 
-    ```sh
-    vercel
-    ```
+   ```sh
+   vercel
+   ```
 
 3. Follow the prompts:
-    - Set up and deploy: `yes`
-    - Scope: `rockyhaque's projects`
-    - Link to existing project: `no`
-    - Project name: `plant-palace-server`
-    - Directory location: `./`
+
+   - Set up and deploy: `yes`
+   - Scope: `rockyhaque's projects`
+   - Link to existing project: `no`
+   - Project name: `plant-palace-server`
+   - Directory location: `./`
 
 4. Once the project is linked, inspect the deployment at the provided URL.
 
-    ```sh
-    Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/65vgHSVVdRWy6jvj1mCUGx34TxSt
-    ```
+   ```sh
+   Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/65vgHSVVdRWy6jvj1mCUGx34TxSt
+   ```
 
 5. Your project is now live at:
 
-    ```sh
-    Production: https://plant-palace-server-hx5v1zdvi-rockyhaques-projects.vercel.app
-    ```
+   ```sh
+   Production: https://plant-palace-server-hx5v1zdvi-rockyhaques-projects.vercel.app
+   ```
 
 6. To overwrite the deployment later, use the following command:
 
-    ```sh
-    vercel --prod
-    ```
+   ```sh
+   vercel --prod
+   ```
 
 ## Production Deployment
+
 1. To deploy to production, run:
 
-    ```sh
-    vercel --prod
-    ```
+   ```sh
+   vercel --prod
+   ```
 
 2. Inspect the production deployment at:
 
-    ```sh
-    Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/6veHFZGJ57C64zqi21FuBTRdDEy4
-    ```
+   ```sh
+   Inspect: https://vercel.com/rockyhaques-projects/plant-palace-server/6veHFZGJ57C64zqi21FuBTRdDEy4
+   ```
 
 3. Your production project is now live at:
 
-    ```sh
-    Production: https://plant-palace-server-2s047nub9-rockyhaques-projects.vercel.app
-    ```
+   ```sh
+   Production: https://plant-palace-server-2s047nub9-rockyhaques-projects.vercel.app
+   ```
 
 ## Vercel Configuration
 
@@ -551,22 +553,21 @@ Create a `vercel.json` file in your project directory with the following content
 
 ```json
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "./index.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/",
-            "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/",
+      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+    }
+  ]
 }
-
 ```
 
 <br> <br>
@@ -662,7 +663,7 @@ Example component:
     </label>
 ```
 
-> ***Note:*** Remove the value property from the input field to make it dynamic and add onChange={handleThemeToggle}.
+> **_Note:_** Remove the value property from the input field to make it dynamic and add onChange={handleThemeToggle}.
 
 ## 5. Create Theme Toggle Function
 
@@ -687,19 +688,22 @@ Now enjoy your theme switcher
 
 # Notes8
 
-# Basic Server setup with node & express js 🖥️ 
+# Basic Server setup with node & express js 🖥️
 
 ### 🔰Step - 1:
 
 ```
 mkdir <Folder Name>
 ```
+
 ```
 cd <Folder Name>
 ```
+
 ```
 npm init -y
 ```
+
 ```
 npm install express cors dotenv
 ```
@@ -714,8 +718,7 @@ npm install express cors dotenv
 
 ### 🔰Step - 3:
 
-```javascript 
-
+```javascript
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -726,10 +729,10 @@ const port = process.env.PORT || 5000;
 
 // middleware
 const corsOptions = {
-    origin: ['http://localhost:5173', 'http://localhost:5174'],
-    credentials: true,
-    optionSuccessStatus: 200
-}
+  origin: ["http://localhost:5173", "http://localhost:5174"],
+  credentials: true,
+  optionSuccessStatus: 200,
+};
 app.use(cors(corsOptions));
 app.use(express.json());
 
@@ -740,7 +743,6 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
 ```
 
 <br> <br>
@@ -756,12 +758,15 @@ app.listen(port, () => {
 ```
 mkdir <Folder Name>
 ```
+
 ```
 cd <Folder Name>
 ```
+
 ```
 npm init -y
 ```
+
 ```
 npm install express cors dotenv cookie-parser jsonwebtoken mongodb
 ```
@@ -776,8 +781,7 @@ npm install express cors dotenv cookie-parser jsonwebtoken mongodb
 
 ### 🔰Step - 3:
 
-```javascript 
-
+```javascript
 const express = require("express");
 const app = express();
 const cors = require("cors");
@@ -863,7 +867,6 @@ async function run() {
         .send({ success: true });
     });
 
-
     //Todo: Create your API here
 
     // Send a ping to confirm a successful connection
@@ -885,13 +888,138 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
-
-
 ```
 
 <br> <br>
 
 <hr>
+
+# Note10
+
+# Basic Contibution at Github
+
+## As a Contributor:
+
+<h4>To contribute to this project, follow these steps:</h4>
+
+1. Fork the Repository:
+   - Fork the repository to your own GitHub account.
+2. Clone the Repository:
+
+   - Clone the forked repository to your local machine
+
+   <br>
+
+   ```
+   git clone https://github.com/<your-username>/<repository-name>.git
+   ```
+
+3. Create a New Branch:
+
+   - Before making any changes, create a new branch:
+
+     - To see all branches:
+
+     <br>
+
+     ```
+     git branch
+     ```
+
+     - To switch to the main branch:
+
+     <br>
+
+     ```
+     git checkout main
+     ```
+
+     - To create a new branch:
+
+     <br>
+
+     ```
+     git branch <new-branch-name>
+     ```
+
+     - Alternatively, create and switch to a new branch in one command:
+
+     <br>
+
+     ```
+     git checkout -b <new-branch-name>
+     ```
+
+4. Update Your Work:
+
+   Make your changes to the code.
+
+   - If you make any changes to the existing code, commit those changes with a message:
+
+    <br>
+
+   ```
+   git commit -am "Description of changes"
+   ```
+
+   - If you create new files, stage and commit them:
+
+    <br>
+
+   ```
+   git add .
+   git commit -am "Message for new file code"
+
+   ```
+
+
+5. Push Changes to Your Forked Repository:
+
+    - Push your changes to your branch on your forked repository:
+
+     <br>
+
+     ```
+     git push origin <new-branch-name>
+     ```
+
+
+6. Create a Pull Request:
+    - Go to the original repository on GitHub.
+    - Click on the "Compare & pull request" button.
+    - Provide a meaningful description of the changes you have made.
+    - Click on "Create Pull Request" to submit your changes for review.
+
+
+
+## As the Repository Owner:
+
+1. Review the Pull Request:
+    - Review the changes submitted by the contributor.
+    - Ensure the changes align with the project's goals and standards.
+
+2. Merge the Pull Request:
+    - Once satisfied with the changes, confirm the merge to incorporate the contributor's changes into the main branch.
+
+
+## After the Merge (For Contributors):
+
+<h4>If your changes have been merged by the owner, update your local repository to stay in sync with the main repository:</h4>
+
+```
+git pull origin main
+```
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Contact
@@ -901,4 +1029,3 @@ For any inquiries or suggestions, connect with me on [LinkedIn](https://www.link
 ---
 
 By keeping the repository organized and up-to-date, **resource-corner** aims to be a go-to repository for anyone looking to enhance their knowledge and skills. Enjoy exploring and learning!
-
