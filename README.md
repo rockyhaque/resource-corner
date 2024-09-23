@@ -1,5 +1,16 @@
 # Resource-Corner
 
+<img src="./assets/cover/top-cover.png" />
+
+
+![GitHub repo size](https://img.shields.io/github/repo-size/rockyhaque/resource-corner)
+![GitHub stars](https://img.shields.io/github/stars/rockyhaque/resource-corner?style=social)
+![GitHub forks](https://img.shields.io/github/forks/rockyhaque/rockyhaque?style=social)
+[![Follow me on LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/your-linkedin-handle/)](https://www.linkedin.com/in/your-linkedin-handle/)
+[![Follow me on Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/rocky_haque.10/)](https://www.instagram.com/rocky_haque.10/)
+[![Connect with me on Facebook](https://img.shields.io/badge/-Facebook-1877F2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/rockyhaquee/)](https://www.facebook.com/rockyhaquee/)
+
+
 A comprehensive collection of links, notes, code snippets, and various other resources to support learning and development.
 
 ## Table of Contents
@@ -29,13 +40,19 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 
 ### Tools
 
-1.  [https://freefrontend.com/tailwind-code-examples/](https://freefrontend.com/tailwind-code-examples/)
-2.  [https://pagedone.io/](https://pagedone.io)
+1.  [https://freefrontend.com/tailwind-code-examples](https://freefrontend.com/tailwind-code-examples/)
+2.  [https://pagedone.io](https://pagedone.io)
 3.  [https://headlessui.com](https://headlessui.com)
+4.  [https://componentland.com](https://componentland.com)
+5.  [https://www.npmjs.com/package/react-toastify](https://www.npmjs.com/package/react-toastify)
+6.  [https://whimsical.com/a ](https://whimsical.com/a )
+7.  [https://caniuse.com](https://caniuse.com)
+8.  [https://www.framer.com](https://www.framer.com)
+9.  [https://undraw.co](https://undraw.co)
 
 ### Links
 
-- Technology Blogs
+- [https://dev.to](https://dev.to)
 
 ### Notes
 
@@ -49,10 +66,16 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 8.  [Basic Server setup with node & express js 🖥️ ](#Notes8)
 9.  [Complete Server setup with JWT, MongoDB, Node & Express js ](#Notes9)
 10. [Basic Contibution at Github](#Note10)
+11. [Upload image with `imgbb` api](#Note11)
+12. [Custom Loading Spinner using react spiner](Note12)
+13. [Empty Content with react spinners](Note13)
+14. [Quick Animation with AOS](Note14)
+
 
 ### Code
 
 1.  [Shared Section Title with description](#Code-1)
+2.  [Section Heading with gradient underline](#Code-2)
 
 ### Profile
 
@@ -61,47 +84,55 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 3. [https://i.ibb.co/Zx8HTV2/harry-pappas-xyaui-SBWRFs-unsplash.jpg](https://i.ibb.co/Zx8HTV2/harry-pappas-xyaui-SBWRFs-unsplash.jpg)
 4. [https://i.ibb.co/tMK85PF/rodney-gainous-jr-p-VF71muh-Rs-unsplash.jpg](https://i.ibb.co/tMK85PF/rodney-gainous-jr-p-VF71muh-Rs-unsplash.jpg)
 5. [https://i.ibb.co/Z1q8wdz/jordan-whitfield-Wj-Uy3-NY95y-U-unsplash.jpg](https://i.ibb.co/Z1q8wdz/jordan-whitfield-Wj-Uy3-NY95y-U-unsplash.jpg)
-6. [https://i.ibb.co/FVr35Vj/karsten-winegeart-k-Wm6b-XPJl4s-unsplash.jpg](https://i.ibb.co/FVr35Vj/karsten-winegeart-k-Wm6b-XPJl4s-unsplash.jpg)
-7. [https://i.ibb.co/CHY13Kz/ryan-snaadt-H9-Gr-Uo-Tk-Wr-M-unsplash.jpg](https://i.ibb.co/CHY13Kz/ryan-snaadt-H9-Gr-Uo-Tk-Wr-M-unsplash.jpg)
-8. [https://i.ibb.co/bz8Dz6B/jackson-schaal-AR9mvykz-SOA-unsplash.jpg](https://i.ibb.co/bz8Dz6B/jackson-schaal-AR9mvykz-SOA-unsplash.jpg)
-9. [https://i.ibb.co/7jL9vZp/viktor-forgacs-j-BTMr-R6-Q334-unsplash.jpg](https://i.ibb.co/7jL9vZp/viktor-forgacs-j-BTMr-R6-Q334-unsplash.jpg)
-10. [https://i.ibb.co/wRPnPZ3/christian-buehner-DIt-Ylc26z-VI-unsplash.jpg](https://i.ibb.co/wRPnPZ3/christian-buehner-DIt-Ylc26z-VI-unsplash.jpg)
-11. [https://i.ibb.co/0jb93bB/petr-sevcovic-au-Cjz0gucr0-unsplash.jpg](https://i.ibb.co/0jb93bB/petr-sevcovic-au-Cjz0gucr0-unsplash.jpg)
-12. [https://i.ibb.co/0BTYnvb/clay-elliot-PF7m-P2x-Ce-Qw-unsplash.jpg](https://i.ibb.co/0BTYnvb/clay-elliot-PF7m-P2x-Ce-Qw-unsplash.jpg)
-13. [https://i.ibb.co/Gvrvnhd/harps-joseph-t-Avp-DE7f-Xg-Y-unsplash.jpg](https://i.ibb.co/Gvrvnhd/harps-joseph-t-Avp-DE7f-Xg-Y-unsplash.jpg)
-14. [https://i.ibb.co/PcR9Xjj/andre-sebastian-X6a-MAzo-VJzk-unsplash.jpg](https://i.ibb.co/PcR9Xjj/andre-sebastian-X6a-MAzo-VJzk-unsplash.jpg)
-15. [https://i.ibb.co/z4RM7ff/kazi-mizan-Woc-Of-FRUTSM-unsplash.jpg](https://i.ibb.co/z4RM7ff/kazi-mizan-Woc-Of-FRUTSM-unsplash.jpg)
-16. [https://i.ibb.co/WfYKxkk/ryan-hoffman-v7-Jja2-Ch-N6s-unsplash.jpg](https://i.ibb.co/WfYKxkk/ryan-hoffman-v7-Jja2-Ch-N6s-unsplash.jpg)
-17. [https://i.ibb.co/4fb24LJ/zoran-borojevic-f5xi-Gm-Fw-XIU-unsplash.jpg](https://i.ibb.co/4fb24LJ/zoran-borojevic-f5xi-Gm-Fw-XIU-unsplash.jpg)
-18. [https://i.ibb.co/z65P8Hk/nartan-buyukyildiz-hr-fe-H2-URs0-unsplash.jpg](https://i.ibb.co/z65P8Hk/nartan-buyukyildiz-hr-fe-H2-URs0-unsplash.jpg)
-19. [https://i.ibb.co/L1TrWZt/albert-dera-ILip77-Sbm-OE-unsplash.jpg](https://i.ibb.co/L1TrWZt/albert-dera-ILip77-Sbm-OE-unsplash.jpg)
-20. [https://i.ibb.co/fHczrnd/jeffrey-keenan-p-Uhxo-Sap-PFA-unsplash.jpg](https://i.ibb.co/fHczrnd/jeffrey-keenan-p-Uhxo-Sap-PFA-unsplash.jpg)
-21. [https://i.ibb.co/hRYxxDr/james-balensiefen-sn-Filgm4-RU-unsplash.jpg](https://i.ibb.co/hRYxxDr/james-balensiefen-sn-Filgm4-RU-unsplash.jpg)
-22. [https://i.ibb.co/BgcZZQ7/shipman-northcutt-sg-ZX15-Da8-YE-unsplash.jpg](https://i.ibb.co/BgcZZQ7/shipman-northcutt-sg-ZX15-Da8-YE-unsplash.jpg)
-23. [https://i.ibb.co/5GRtY8R/josh-scorpio-H3-Tuh0hw-YQk-unsplash.jpg](https://i.ibb.co/5GRtY8R/josh-scorpio-H3-Tuh0hw-YQk-unsplash.jpg)
-24. [https://i.ibb.co/qxCK9Dx/andre-sebastian-C2-Nf5i-POnz0-unsplash.jpg](https://i.ibb.co/qxCK9Dx/andre-sebastian-C2-Nf5i-POnz0-unsplash.jpg)
-25. [https://i.ibb.co/Mh3KVfF/clay-elliot-Hf-MCgq-OLTy-M-unsplash.jpg](https://i.ibb.co/Mh3KVfF/clay-elliot-Hf-MCgq-OLTy-M-unsplash.jpg)
-26. [https://i.ibb.co/2nNHYhW/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg](https://i.ibb.co/2nNHYhW/jurica-koletic-7-YVZYZe-ITc8-unsplash.jpg)
-27. [https://i.ibb.co/ZzprBnH/darshan-patel-QJEVpydul-Gs-unsplash.jpg](https://i.ibb.co/ZzprBnH/darshan-patel-QJEVpydul-Gs-unsplash.jpg)
-28. [https://i.ibb.co/C7Zxy2N/alexander-hipp-i-EEBWg-Y-6l-A-unsplash.jpg](https://i.ibb.co/C7Zxy2N/alexander-hipp-i-EEBWg-Y-6l-A-unsplash.jpg)
+
+
 
 <br><br>
 
-# Code-1
+## Code-1
 
-## Shared Section Title with description
+### Shared Section Title with description
 
-```
+```jsx
 const SectionTitle = ({heading, description}) => {
     return (
-        <div className="mx-auto text-center md:w-4/12 my-8">
-            <h3 className="text-3xl font-semibold py-4">{heading}</h3>
-            <p>{description}</p>
+        <div className="mx-auto text-center md:w-4/12 my-8 ">
+            <h3 className="text-2xl md:text-4xl font-extrabold py-4 font-nunitoSans text-gray-800" data-aos="fade-right">{heading}</h3>
+            <p className="font-roboto text-gray-600" data-aos="fade-left">{description}</p>
         </div>
     );
 };
 
 export default SectionTitle;
+```
+
+## Code-2
+
+### Section Heading with gradient underline
+
+```jsx
+const SectionHeading = ({ heading }) => {
+    return (
+      <div className="relative mx-auto text-center md:w-6/12 my-12">
+        {/* Curved decorative element behind the heading */}
+        <div className="absolute inset-x-0 -top-8 transform rotate-3 opacity-20 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 h-14 w-full rounded-full blur-2xl"></div>
+        
+        {/* Main Heading */}
+        <h3 className="relative z-10 text-xl md:text-3xl font-extrabold font-nunitoSans py-4 bg-gradient-to-r from-indigo-900 via-cyan-900 to-pink-500 text-transparent bg-clip-text drop-shadow-lg">
+          {heading}
+        </h3>
+  
+        {/* Subtle glowing line below the heading */}
+        <div className="relative mx-auto mt-1 w-20 h-1 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-full before:absolute before:-inset-1 before:bg-glow before:blur-md before:opacity-60"></div>
+  
+        {/* Bottom curved decoration */}
+        <div className="absolute inset-x-0 bottom-0 transform rotate-[-2deg] opacity-10 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 h-10 w-full rounded-full blur-xl"></div>
+      </div>
+    );
+  };
+  
+  export default SectionHeading;
+  
 ```
 
 <br>
@@ -323,9 +354,6 @@ export default Login;
 
 ## 🌼Firebase Deploy
 
-```
-npm run build
-```
 
 ```
 firebase init
@@ -339,9 +367,13 @@ firebase init
 
 > What do you want to use as your public directory? -> `dist`
 
-> Configure as a single-page app (rewrite all urls to /index.html)? -> `n`
+> Configure as a single-page app (rewrite all urls to /index.html)? -> `y`
 
 > Set up automatic builds and deploys with GitHub? `n`
+
+```
+npm run build
+```
 
 ```
 firebase deploy
@@ -1011,14 +1043,147 @@ git pull origin main
 ```
 
 
+# Note11
+
+## Upload image with `imgbb` api
 
 
+1. Get the API key from imgbb developer API and add on `.env` file
+
+```
+VITE_IMGBB_API_KEY=****
+```
+
+2. Install Axios & proptypes(To handle prop validation)
+
+```
+npm i axios proptypes
+```
 
 
+3. > src > api > index.js
+
+```js
+
+import axios from "axios";
+
+export const imageUpload = async (image) => {
+
+  const formData = new FormData();
+  formData.append("image", image);
+
+  const { data } = await axios.post(
+    `https://api.imgbb.com/1/upload?key=${import.meta.env.VITE_IMGBB_API_KEY}`,
+    formData
+  );
+
+  return data.data.display_url;
+};
+```
 
 
+## Note12
+
+### Custom Loading Spinner using react spiner
+
+Install [React Spinners](https://www.davidhu.io/react-spinners) with Prop Types
+
+    ```
+    npm i react-spinners prop-types
+    ```
+
+    ```jsx
+    import PropTypes from 'prop-types'
+    import { HashLoader } from 'react-spinners'
+
+    const LoadingSpinner = ({ smallHeight }) => {
+      return (
+        <div
+          className={` ${smallHeight ? 'h-[250px]' : 'h-[70vh]'}
+          flex 
+          flex-col 
+          justify-center 
+          items-center `}
+        >
+          <HashLoader size={100} color='#421d81' />
+        </div>
+      )
+    }
+
+    LoadingSpinner.propTypes = {
+      smallHeight: PropTypes.bool,
+    }
+
+    export default LoadingSpinner
+    ```
+
+## Note13
+
+### Empty Content with react spinners
+
+1. Install [React Spinners](https://www.davidhu.io/react-spinners)
+
+    ```
+    npm i react-spinners
+    ```
+
+2. You can modify with `ClimbingBoxLoader`
+
+    ```jsx
+
+    import { ClimbingBoxLoader } from 'react-spinners';
+
+    const EmptyContent = ({title, subTitle}) => {
+        return (
+            <div className="flex items-center justify-center mb-8">
+              <div className="text-center">
+                <div className="flex items-center justify-center">
+                  <ClimbingBoxLoader size={12} color="#421d81" />
+                </div>
+                <h2 className="text-lg md:text-xl font-semibold text-gray-800">
+                  {title}
+                </h2>
+                <p className="text-gray-500 mt-2">{subTitle}</p>
+              </div>
+            </div>
+        );
+    };
+
+    export default EmptyContent;
+    ```
 
 
+## Note14
+
+### Quick Animation with [AOS](https://michalsnik.github.io/aos)
+
+1. Install AOS
+
+    ```
+    npm i aos
+    ```
+
+2. To get access for every component use in `Root Layout`
+
+    ```js
+
+    import AOS from "aos";
+    import "aos/dist/aos.css";
+
+    const Root = () => {
+
+      useEffect(() => {
+        AOS.init({ duration: 2000 });
+      }, []);
+
+      return (
+        <h3 className="text-2xl" data-aos="fade-right">Animation Content</h3>
+      )
+    }
+      
+    ```
+
+    > NOTE: Make change here `data-aos="fade-right"`
 
 
 
