@@ -66,10 +66,10 @@ Feel free to explore and contribute to the **resource-corner**. Whether you're a
 8.  [Basic Server setup with node & express js 🖥️ ](#Notes8)
 9.  [Complete Server setup with JWT, MongoDB, Node & Express js ](#Notes9)
 10. [Basic Contibution at Github](#Note10)
-11. [Upload image with `imgbb` api](##Note-11)
-12. [Custom Loading Spinner using react spiner](##Note-12)
-13. [Empty Content with react spinners](##Note-13)
-14. [Quick Animation with AOS](##Note-14)
+11. [Upload image with `imgbb` api](#Note-11)
+12. [Custom Loading Spinner using react spiner](#Note-12)
+13. [Empty Content with react spinners](#Note-13)
+14. [Quick Animation with AOS](#Note-14)
 
 
 ### Code
@@ -1043,7 +1043,7 @@ git pull origin main
 ```
 
 
-## Note-11
+# Note-11
 
 ## Upload image with `imgbb` api
 
@@ -1082,7 +1082,7 @@ export const imageUpload = async (image) => {
 ```
 
 
-## Note-12
+# Note-12
 
 ### Custom Loading Spinner using react spiner
 
@@ -1117,7 +1117,7 @@ Install [React Spinners](https://www.davidhu.io/react-spinners) with Prop Types
     export default LoadingSpinner
     ```
 
-## Note-13
+# Note-13
 
 ### Empty Content with react spinners
 
@@ -1153,7 +1153,7 @@ Install [React Spinners](https://www.davidhu.io/react-spinners) with Prop Types
     ```
 
 
-## Note-14
+# Note-14
 
 ### Quick Animation with [AOS](https://michalsnik.github.io/aos)
 
