@@ -1042,6 +1042,30 @@ app.listen(port, () => {
 git pull origin main
 ```
 
+## Issues 😥 (For Contributors):
+
+<h4>📌 To delete the branch, follow these steps:<h4>
+
+1. Switch to another branch (e.g., main):
+    ```
+    git checkout main
+    ```
+2. Delete the branch:
+
+      ```
+      git branch --delete <branch-name>
+      ```
+<h4>📌 To merge main branch with your branch:<h4>
+
+1. Switch at your branch:
+    ```
+    git checkout <your-branch>
+    ```
+2. Merge the main branch with your branch:
+
+      ```
+      git merge main
+      ```
 
 # Note-11
 
